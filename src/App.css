@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.background-image {
+  background-image: url("https://cdn.freecodecamp.org/curriculum/js-music-player/digital-drift.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+body {
+  font-family: Courier New, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-scroll-left {
+    animation: scroll-left 10s linear infinite;
+  }
+  .animate-scroll-left:hover {
+    animation-play-state: paused;
+  }
+}
