@@ -1,3 +1,4 @@
+import type React from "react"
 import { type RefObject, type Dispatch, type SetStateAction, createContext } from "react"
 
 export interface TrackType {
@@ -44,7 +45,19 @@ export interface PlayerContextType {
   playWithId: (id: number) => Promise<void>
   previous: () => Promise<void>
   next: () => Promise<void>
-  seekSong: (e: React.MouseEvent<HTMLHRElement>) => Promise<void>
+  seekSong: (e: React.MouseEvent<HTMLDivElement>) => Promise<void>
+  toggleLoop: () => void
+  toggleShuffle: () => void
+  loop: boolean
+  shuffle: boolean
+  autoplay: boolean
+  toggleAutoplay: () => void
+  isMuted: boolean
+  toggleMute: () => void
+  volume: number
+  setVolume: (vol: number) => void
+  setQueueNext: (trackId: number) => void
+  queueTrackId: number | null
 }
 
 export const PlayerContext = createContext<PlayerContextType | undefined>(undefined)

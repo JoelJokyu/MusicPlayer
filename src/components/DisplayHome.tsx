@@ -33,7 +33,7 @@ const DisplayHome: React.FC = () => {
           {/* right side with tracklist */}
           <div className="flex-1 overflow-y-auto">
             <div className="p-8">
-              <h2 className="text-2xl font-bold mb-6 text-foreground">
+              <h2 className="text-2xl font-bold mb-6 text-foreground sticky">
                 Playlist (Main)
               </h2>
               <div className="space-y-3">

@@ -42,12 +42,12 @@ const TRACKS: TrackType[] = [
 		id:4,
 	},
 	{
+		id:5,
 		title: 'Turn Up (Original, Uncensored) #Exclusive',
 		artist: '#ActiveGxng Suspect x T.Scam',
-		cover: 'https://i1.sndcdn.com/artworks-3FrTVjEaijyogUsy-JDLFmg-t1080x1080.jpg',
 		src: './songs/turn-up-Sus_Tscam.mp3',
+		cover: 'https://i1.sndcdn.com/artworks-3FrTVjEaijyogUsy-JDLFmg-t1080x1080.jpg',
 		dur: '219',
-		id:5,
 	},
 ];
 

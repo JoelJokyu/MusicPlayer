@@ -23,7 +23,7 @@ const App: React.FC = () => {
           <Display />
         </div>
         <Player />
-        <audio ref={audioRef} src={track.src} preload="auto" />
+        <audio ref={audioRef} src={track.src} preload="auto" crossOrigin="anonymous" />
       </div>
     </>
   )
